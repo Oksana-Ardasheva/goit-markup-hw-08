@@ -1,0 +1,33 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.connect__list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.connect__item {
+  margin-right: 50px;
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.site-list {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.site-list__item:not(:last-child) {
+  margin-right: 50px;
+}
