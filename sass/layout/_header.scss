@@ -31,3 +31,23 @@
 .site-list__item:not(:last-child) {
   margin-right: 50px;
 }
+
+.navigation {
+  display: none;
+
+  @include tab {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+.contacts {
+  display: none;
+
+  @include tab {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}

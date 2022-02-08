@@ -3,17 +3,19 @@
   color: var(--primary-white-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  flex-direction: row;
+  // display: flex;
+  // flex-direction: row;
 }
 
 .footer__logo {
   color: #fff;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   text-decoration: none;
-  line-height: 1.2;
+  line-height: 1.17;
+  align-self: center;
+  margin-bottom: 20px;
 }
 
 .footer__adress {
@@ -30,20 +32,27 @@
   line-height: 1.71;
   text-align: left;
   color: rgba(255, 255, 255, 0.6);
+  text-align: center;
 }
 
-.footer__container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+.footer-container {
+  text-align: center;
+  align-items: center;
+
+  @include tab {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
 }
 
 .footer-contact {
-  margin-right: 70px;
+  // margin-right: 70px;
   color: #ffffff;
   background-color: var(--first-bg-color);
   margin-top: 20px;
   text-decoration: none;
+  margin-bottom: 60px;
 }
 
 .footer__title {
@@ -56,6 +65,14 @@
 
 .footer__list {
   display: flex;
+  justify-content: center;
+}
+.footer-item__contact {
+  margin-bottom: 60px;
+}
+
+.footer-item__join {
+  margin-bottom: 60px;
 }
 
 .footer__item:not(:last-child) {
@@ -90,15 +107,26 @@
   }
 }
 
-.form-footer {
-  display: flex;
-  flex-direction: row;
-  margin-left: 93px;
+.footer-form {
+  // display: flex;
+  // flex-direction: column;
+  @include tab {
+    display: flex;
+    flex-direction: row;
+    margin-left: 93px;
+  }
 }
+
+// . {
+//   display: block;
+//   align-items: center;
+// }
 
 .footer__input {
   width: 358px;
   height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 4px;
   background-color: transparent;
   padding: 15px 0 15px 16px;
@@ -109,6 +137,7 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  width: 450px;
   cursor: pointer;
   &:hover::placeholder,
   &:focus::placeholder {
@@ -146,6 +175,5 @@
     font-weight: 700;
     text-transform: uppercase;
     color: var(--primary-white-color);
-    margin-bottom: 20px;
   }
 }

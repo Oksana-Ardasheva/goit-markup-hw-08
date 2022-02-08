@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 1200px) {
+  @include desk {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -41,12 +41,12 @@
   flex-basis: calc(100% / 2 - 30px);
   width: 210px;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     flex-basis: calc(100% / 3 - 30px);
     width: 226px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desk {
     flex-basis: calc(100% / 6 - 30px);
     width: 170px;
   }
@@ -60,7 +60,7 @@
   text-align: center;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px) {
+  @include desk {
     font-size: 36px;
     margin-bottom: 50px;
   }

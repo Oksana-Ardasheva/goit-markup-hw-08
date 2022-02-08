@@ -32,9 +32,14 @@
   transition: transform 500ms;
   padding: 40px;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     width: 450px;
     top: 208px;
+  }
+
+  @include tab {
+    width: 528px;
+    top: 221px;
   }
 }
 
@@ -69,11 +74,15 @@
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 2px;
+
+  @include desk {
+    line-height: 1.17;
+  }
 }
 
 .form-field {
@@ -152,8 +161,8 @@
 }
 
 .check__text {
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--secondary-text-color);
   display: flex;
   align-items: center;
@@ -166,6 +175,11 @@
     border-radius: 2px;
     margin-right: 7px;
   }
+
+  @include desk {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .policy-check:checked + .check__text::before {
@@ -177,7 +191,7 @@
 }
 
 .check__link {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   text-decoration-line: underline;
   color: #2196f3;

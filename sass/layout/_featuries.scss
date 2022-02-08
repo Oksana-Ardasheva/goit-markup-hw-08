@@ -7,7 +7,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 1200px) {
+  @include desk {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -15,13 +15,13 @@
 
 .feature__list {
   margin-bottom: -30px;
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desk {
     width: 1170px;
   }
 }
@@ -31,11 +31,11 @@
   width: 450px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     flex-basis: calc((100% - 2 * 30px) / 2);
     margin-right: 30px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     flex-basis: calc((100% - 4 * 30px) / 4);
   }
 }
@@ -49,7 +49,7 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 
-  @media screen and (min-width: 1200px) {
+  @include desk {
     text-align: left;
   }
 }
