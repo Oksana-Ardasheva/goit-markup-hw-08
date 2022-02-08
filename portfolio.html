@@ -88,6 +88,31 @@
             <li class="portfolio__item">
               <a href="" class="link portfolio__link thumb__link">
                 <div class="thumb__img">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1.jpg    1x,
+                        ./images/portfolio/portfolio1-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1-tab-1x.jpg 1x,
+                        ./images/portfolio/portfolio1-2x.jpg     2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-mob-4-1x.jpg 1x,
+                        ./images/img-mob-4-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/img-4.jpg" alt="Михаил Ермаков" />
+                  </picture>
+
                   <img
                     src="./images/portfolio/portfolio1.jpg"
                     alt="Сайт"

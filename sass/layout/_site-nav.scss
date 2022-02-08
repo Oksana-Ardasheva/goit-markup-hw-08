@@ -1,5 +1,5 @@
 .site-nav {
-  position: relative;
+  display: none;
 }
 
 .site-list__link {
@@ -35,4 +35,12 @@
     left: 0;
     bottom: -1px;
   }
+}
+
+.connect__list {
+  display: none;
+}
+
+.menu-open-btn {
+  margin-left: auto;
 }

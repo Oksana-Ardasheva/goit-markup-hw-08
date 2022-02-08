@@ -674,7 +674,7 @@ img {
 }
 
 .site-nav {
-  position: relative;
+  display: none;
 }
 
 .site-list__link {
@@ -709,6 +709,14 @@ img {
   position: absolute;
   left: 0;
   bottom: -1px;
+}
+
+.connect__list {
+  display: none;
+}
+
+.menu-open-btn {
+  margin-left: auto;
 }
 
 .hero {
