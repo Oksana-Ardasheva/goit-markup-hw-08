@@ -1,11 +1,19 @@
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
 .header__container {
-  position: relative;
+  // position: relative;
   display: flex;
   align-items: center;
+  padding-bottom: 16px;
+  padding-top: 16px;
+
+  @include tab {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .connect__list {
@@ -15,7 +23,9 @@
 }
 
 .connect__item {
-  margin-right: 50px;
+  @include desk {
+    margin-right: 50px;
+  }
 }
 
 .header__logo {
