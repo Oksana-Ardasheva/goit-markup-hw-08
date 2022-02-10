@@ -60,15 +60,19 @@
           </li>
         </ul>
         <button type="button" class="menu-open-btn" data-menu-open>
-          <svg class="icon mob-menu__icon" width="40" height="40">
-                <use href="./images/menu_40px.svg"></use>
-              </svg>
+          <svg class="mob-menu__icon" width="18.67" height="18.67">
+              <use href="./images/sprite.svg#icon-menu_24px"></use>
+            </svg>
         </button>
       </div>
       <div class="mob-menu-container is-hidden" data-menu>
         <div class="container">
           <div class="mob-menu-top">
-          <button type="button" class="menu-close-btn" data-menu-close>X</button>
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="mob-menu__icon" width="18.67" height="18.67">
+              <use href="./images/sprite.svg#icon-vector"></use>
+            </svg>
+          </button>
                       
               <ul class="list mob-menu-list">
                 <li class="mob-menu-list__item">
@@ -153,7 +157,7 @@
     </header>
 
     <main>
-      <!-- <section class="section hero">
+      <section class="section hero">
         <div class="container hero__container">
           <h1 class="hero__title">
             Эффективные решения <br />
@@ -165,7 +169,7 @@
         </div>
       </section> -->
 
-      <!-- <section class="section feature-section">
+      <section class="section feature-section">
         <div class="container feature-container">
           <ul class="list feature__list">
             <li class="feature__item">
@@ -218,9 +222,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="section-about">
+      <section class="section-about">
         <div class="container about-container">
           <h2 class="about__title">Чем мы занимаемся</h2>
           <ul class="list about__list">
@@ -265,9 +269,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="section team-section">
+      <section class="section team-section">
         <div class="container team-container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
@@ -470,8 +474,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="clients-section">
+      </section>
+      <section class="clients-section">
         <div class="container clients-container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="list clients__list">
@@ -519,7 +523,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <footer class="footer">
@@ -577,8 +581,9 @@
               </li>
             </ul>
         </div>
-        <div class="footer-form">
-          <form action="#">
+        <div class="footer-subscribe">
+          <form action="#" class="footer-form">
+            <div class="footer-wrapper">
           <label for="user_email" class="footer__title">Подпишитесь на рассылку</label>
               <input
                 type="email"
@@ -587,7 +592,7 @@
                 placeholder="E-mail"
                 class="footer__input"
               />
-              
+              </div>
               <div class="form-btn">
                 <button type="submit" class="footer__btn">
                   Подписаться

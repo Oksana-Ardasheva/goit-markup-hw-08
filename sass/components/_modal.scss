@@ -34,12 +34,12 @@
 
   @include tab {
     width: 450px;
-    top: 208px;
+    // top: 208px;
   }
 
-  @include tab {
+  @include desk {
     width: 528px;
-    top: 221px;
+    // top: 221px;
   }
 }
 
@@ -196,4 +196,9 @@
   text-decoration-line: underline;
   color: #2196f3;
   margin-left: 5px;
+
+  @include desk {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }

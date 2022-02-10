@@ -208,14 +208,12 @@ img {
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
-    top: 208px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    top: 221px;
   }
 }
 
@@ -386,6 +384,13 @@ img {
   margin-left: 5px;
 }
 
+@media screen and (min-width: 1200px) {
+  .check__link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .menu-button {
   display: inline-flex;
   margin: 0;
@@ -498,7 +503,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-container {
-    align-items: center;
     text-align: left;
     justify-items: center;
     width: 100%;
@@ -569,30 +573,20 @@ img {
   }
 }
 
-.footer-form {
-  display: flex;
-  flex-direction: row;
-  margin-top: 60px;
-  align-items: center;
-}
-
 @media screen and (min-width: 1200px) {
   .footer-form {
     display: flex;
-    flex-direction: row;
-    margin-top: 0;
-    align-items: center;
   }
 }
 
 .footer__input {
   height: 50px;
-  margin-bottom: 20px;
   border-radius: 4px;
   background-color: transparent;
   padding: 15px 0 15px 16px;
   font-family: inherit;
   margin-right: 12px;
+  margin-top: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 16px;
   line-height: 1.25;
@@ -600,6 +594,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
   width: 450px;
   cursor: pointer;
+  display: block;
 }
 
 .footer__input:hover::placeholder, .footer__input:focus::placeholder {
@@ -616,6 +611,13 @@ img {
   position: relative;
   display: inline-flex;
   align-items: center;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-btn {
+    margin-top: 40px;
+  }
 }
 
 .footer__btn {
@@ -631,6 +633,25 @@ img {
   cursor: pointer;
   padding-left: 29px;
   text-align-last: left;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+
+.footer-wrapper {
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-wrapper {
+    margin-top: 0;
+  }
 }
 
 .header {
@@ -780,6 +801,10 @@ img {
   border: none;
 }
 
+.menu-open-btn:hover, .menu-open-btn:focus {
+  color: var(--accent-color);
+}
+
 @media screen and (min-width: 768px) {
   .menu-open-btn {
     display: none;
@@ -817,16 +842,20 @@ img {
 }
 
 .menu-close-btn {
+  width: 44px;
+  height: 44px;
   margin-left: auto;
   display: block;
-}
-
-.menu-close-btn:hover, .menu-close-btn:focus {
-  color: var(--accent-color);
+  background-color: transparent;
+  border: none;
 }
 
 .mob-menu__icon {
   fill: currentColor;
+}
+
+.mob-menu__icon:hover, .mob-menu__icon:focus {
+  color: var(--accent-color);
 }
 
 .mob-menu-list__link {
