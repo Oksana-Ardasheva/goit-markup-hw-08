@@ -66,7 +66,6 @@
         </button>
       </div>
       <div class="mob-menu-container is-hidden" data-menu>
-        <div class="container">
           <div class="mob-menu-top">
           <button type="button" class="menu-close-btn" data-menu-close>
             <svg class="mob-menu__icon" width="18.67" height="18.67">
@@ -95,14 +94,14 @@
             <div class="mob-menu-bottom">
               <ul class="list mob-connect__list">
                 <li class="mob-connect__tel">
-                  <a href="tel:+380961111111" class="link mob-connect__link">
+                  <a href="tel:+380961111111" class="link">
                     +38 096 111 11 11
                   </a>
                 </li>
                 <li class="mob-connect__mail">
                   <a
                     href="mailto:info@devstudio.com"
-                    class="link mob-connect__link"
+                    class="link"
                   >
                     info@devstudio.com
                   </a>
@@ -167,7 +166,7 @@
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <section class="section feature-section">
         <div class="container feature-container">
@@ -230,25 +229,30 @@
           <ul class="list about__list">
             <li class="about__item">
               <div class="about-wrapper">
+                <picture>
+                <source srcset="./images/box-1.jpg 1x, 
+                ./images/box-1-2x.jpg 2x"
+                media="(min-width: 1200px)">
                 <img
-                  src="./images/box-1.jpg"
-                  alt="компьютер"
-                  width="370"
-                  height="294"
-                />
-                <div class="about-thumb">
+                src="./images/box-1.jpg"
+                alt="компьютер"/>
+              </picture>
+                                <div class="about-thumb">
                   <p>Десктопные приложения</p>
                 </div>
               </div>
             </li>
             <li class="about__item">
               <div class="about-wrapper">
+                <picture>
+                <source srcset="./images/box-2.jpg 1x, 
+                ./images/box-2-2x.jpg 2x"
+                media="(min-width: 1200px)">
                 <img
-                  src="./images/box-2.jpg"
-                  alt="смартфон"
-                  width="370"
-                  height="294"
-                />
+                src="./images/box-2.jpg"
+                alt="смартфон"/>
+              </picture>
+                
                 <div class="about-thumb">
                   <p>Мобильные приложения</p>
                 </div>
@@ -256,12 +260,15 @@
             </li>
             <li class="about__item">
               <div class="about-wrapper">
+                <picture>
+                <source srcset="./images/box-3.jpg 1x, 
+                ./images/box-3-2x.jpg 2x"
+                media="(min-width: 1200px)">
                 <img
-                  src="./images/box-3.jpg"
-                  alt="планшет"
-                  width="370"
-                  height="294"
-                />
+                src="./images/box-3.jpg"
+                alt="планшет"/>
+              </picture>
+               
                 <div class="about-thumb">
                   <p>Дизайнерские решения</p>
                 </div>

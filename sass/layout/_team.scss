@@ -1,11 +1,18 @@
 .team-section {
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .team-container {
   padding-bottom: 60px;
   padding-top: 60px;
+
+  @include desk {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .team__title {

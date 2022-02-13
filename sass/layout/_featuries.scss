@@ -28,7 +28,7 @@
 
 .feature__item {
   display: block;
-  width: 450px;
+  max-width: 450px;
   margin-bottom: 30px;
 
   @include tab {

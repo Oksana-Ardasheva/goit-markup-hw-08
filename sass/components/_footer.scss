@@ -125,28 +125,54 @@
 }
 
 .footer__input {
-  height: 50px;
-  border-radius: 4px;
-  background-color: transparent;
-  padding: 15px 0 15px 16px;
-  font-family: inherit;
-  margin-right: 12px;
-  margin-top: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  width: 450px;
-  cursor: pointer;
-  display: block;
-  &:hover::placeholder,
-  &:focus::placeholder {
+  @include small-tel {
+    height: 50px;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 0 15px 16px;
+    font-family: inherit;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    max-width: 450px;
+    cursor: pointer;
+    &:hover::placeholder,
+    &:focus::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  @include tel {
+    height: 50px;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 0 15px 16px;
+    font-family: inherit;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    &:hover::placeholder,
+    &:focus::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+      width: 450px;
+      display: block;
+    }
+  }
+  @include tab {
+    width: 450px;
+    margin-top: 0;
   }
 
   @include desk {
     width: 358px;
+    margin-top: 0;
+    margin-right: 12px;
   }
 }
 
@@ -198,6 +224,11 @@
 // }
 .footer-wrapper {
   margin-top: 60px;
+
+  @include tab {
+    display: flex;
+    flex-direction: column;
+  }
 
   @include desk {
     margin-top: 0;

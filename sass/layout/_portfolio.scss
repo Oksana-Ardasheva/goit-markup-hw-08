@@ -15,7 +15,7 @@
   justify-content: left;
   flex-basis: calc((100% - 5 * 8px) / 5);
 
-  @include desk {
+  @include tab {
     justify-content: center;
   }
 }
