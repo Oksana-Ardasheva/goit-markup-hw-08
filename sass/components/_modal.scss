@@ -74,13 +74,21 @@
 }
 
 .modal__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  margin-bottom: 2px;
+  @include small-tel {
+    width: 270px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 2px;
+  }
+
+  @include tel {
+    width: 370px;
+    font-size: 20px;
+  }
 
   @include desk {
     line-height: 1.17;
@@ -164,22 +172,24 @@
 
 .check__text {
   @include small-tel {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1.17;
     color: var(--secondary-text-color);
-    display: flex;
-    align-items: center;
     margin-bottom: 20px;
     &::before {
       content: "";
-      width: 16px;
-      height: 15px;
+      width: 13px;
+      height: 12px;
       border: 2px solid var(--primary-text-color);
       border-radius: 2px;
       margin-right: 7px;
+      display: inline-block;
     }
     @include tel {
       font-size: 12px;
+      line-height: 1.17;
+      width: 16px;
+      height: 15px;
     }
   }
 
@@ -199,7 +209,7 @@
 
 .check__link {
   @include small-tel {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1.71;
     text-decoration-line: underline;
     color: #2196f3;

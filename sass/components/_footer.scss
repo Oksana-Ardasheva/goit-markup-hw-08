@@ -50,7 +50,7 @@
   @include desk {
     text-align: left;
     justify-items: center;
-    width: 100%;
+    width: 1200px;
   }
 }
 
@@ -131,13 +131,13 @@
     background-color: transparent;
     padding: 15px 0 15px 16px;
     font-family: inherit;
-    margin-top: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     max-width: 450px;
+    margin-top: 20px;
     cursor: pointer;
     &:hover::placeholder,
     &:focus::placeholder {
@@ -145,28 +145,11 @@
     }
   }
   @include tel {
-    height: 50px;
-    border-radius: 4px;
-    background-color: transparent;
-    padding: 15px 0 15px 16px;
-    font-family: inherit;
-    margin-top: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    cursor: pointer;
-    &:hover::placeholder,
-    &:focus::placeholder {
-      color: rgba(255, 255, 255, 0.6);
-      width: 450px;
-      display: block;
-    }
+    margin-top: 0;
+    width: 450px;
   }
   @include tab {
     width: 450px;
-    margin-top: 0;
   }
 
   @include desk {
@@ -223,9 +206,12 @@
 //   }
 // }
 .footer-wrapper {
-  margin-top: 60px;
+  @include small-tel {
+    display: block;
+    margin-top: 60px;
+  }
 
-  @include tab {
+  @include tel {
     display: flex;
     flex-direction: column;
   }
